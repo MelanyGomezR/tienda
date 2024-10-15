@@ -1,0 +1,56 @@
+import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Pedido {
+    private int id;
+    private Date fecha;
+    private Cliente cliente;
+    private List<DetallePedido> detalles;
+
+    // Constructor
+    public Pedido(int id, Date fecha, Cliente cliente) {
+        this.id = id;
+        this.fecha = fecha;
+        this.cliente = cliente;
+        this.detalles = new ArrayList<>();
+    }
+
+    // Agregar un detalle al pedido
+    public void agregarDetalle(DetallePedido detalle) {
+        detalles.add(detalle);
+    }
+
+    // Getters y Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public List<DetallePedido> getDetalles() {
+        return detalles;
+    }
+
+    public void setDetalles(List<DetallePedido> detalles) {
+        this.detalles = detalles;
+    }
+}
