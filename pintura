@@ -1,0 +1,38 @@
+public class Pintura extends Producto {
+    private String color;
+    private String tipo;
+    private int cantidad;
+
+    // Constructor
+    public Pintura(int id, String nombre, double precio, String color, String tipo, int cantidad) {
+        super(id, nombre, precio);
+        this.color = color;
+        this.tipo = tipo;
+        this.cantidad = cantidad;
+    }
+
+    // Getters y Setters
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+}
